@@ -1,0 +1,116 @@
+.timeline .container{
+    padding: 80px 0px 40px 0px;
+}
+.timeline-main {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.timeline-main::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  border-right: 0.15rem solid #08abd4;
+  height: calc(100% - 0rem);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  padding: 10px 50px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+
+.left::before {
+  content: " ";
+  background: url(../../assets/roadmap-line.svg);
+  position: absolute;
+  top: 101px;
+  width: 70px;
+  height: 0.15rem;
+  z-index: 1;
+  right: 0px;
+  transform: rotate(-180deg);
+}
+
+.right::before {
+  content: " ";
+  background: url(../../assets/roadmap-line.svg);
+  position: absolute;
+  top: 101px;
+  width: 70px;
+  height: 0.15rem;
+  z-index: 1;
+  left: 0px;
+  transform: rotate(0deg);
+}
+
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content-wrap {
+  padding: 20px 24px;
+  position: relative;
+  font-family: "Roboto";
+  border-radius: 6px;
+}
+.content{
+    border: 1px solid #08abd4;
+    padding: 24px 18px;
+    border-radius: 10px;
+}
+.content p{
+    font-size: 16px;
+    margin-top: 24px;
+    color: #08abd4;
+}
+/* Media queries  */
+@media screen and (max-width: 600px) {
+    .timeline .container {
+    padding: 50px 0px;
+}
+  .timeline-main::after {
+  left: 31px;
+  }
+  
+  .timeline-container {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  .timeline-main::after {
+      display: none;
+  }
+  
+  .timeline-container::before {
+  display: none;
+  }
+.content-wrap {
+  padding: 0px 16px;
+}
+  
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  
+  .right {
+  left: 0%;
+  }
+}

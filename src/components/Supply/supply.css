@@ -1,0 +1,24 @@
+
+.supply-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.supply-img img{
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+
+@media (max-width:980px){
+
+}
+@media (max-width:830px){
+    .supply {
+    padding: 0px 16px;
+}
+.supply-img img{
+    margin-left: 0px;
+}
+}

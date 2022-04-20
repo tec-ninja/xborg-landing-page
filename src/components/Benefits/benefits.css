@@ -1,0 +1,125 @@
+.benefits-container{
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0px 14px;
+}
+.benefits-wrap {
+    display: flex;
+    justify-content: center;
+    width: 670px;
+    align-items: center;
+    margin: 0 auto 50px auto;
+    position: relative;
+}
+
+.benefits-l {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2rem;
+    padding: 16px;
+    z-index: 10;
+}
+.benefits-l .title-1{
+    top: 0;
+    left: 0;
+}
+.benefits-l .title-2{
+    top: 0;
+    right: 0;
+}
+.benefits-l h1{
+    font-size: 40px;
+    /* max-width: 60%; */
+    text-align: center;
+
+}
+.benefits-outline {
+    border-radius: 19px;
+}
+.benefits-r{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+    padding: 16px;
+    /* border-radius: 19px; */
+    border: none;
+    -webkit-clip-path: polygon(0% 16px, 100% 0%, 100% 100%, 16px 100%);
+    clip-path: polygon(0% 16px, 100% 0%, 100% 100%, 16px 100%);
+    z-index: 10;
+}
+.benefits-r-div p{
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    padding: 6px;
+}
+.bg-effect {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.blur-box {
+    filter: url('#522c589e-f1e0-4d61-a0ad-c19686231621'); 
+    height: 100%;
+}
+.skew-box {
+    clip-path: polygon(0% 16px, 100% 0%, 100% 100%, 16px 100%); 
+    width: 100%; 
+    height: 100%; 
+    background-color: #ba468a;
+}
+.svg-filter {
+    visibility: hidden;
+    position: absolute;
+}
+.container {
+    position: relative;
+}
+@media (max-width:768px) {
+    .benefits{
+        margin-bottom: 60px;
+    }
+    .benefits-wrap{
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+    .col-rev{
+        flex-direction: column-reverse;
+    }
+    .benefits-l img{
+    position: relative;
+    width: 100px;
+    margin-bottom: 16px;
+    }
+    .benefits-l {
+    min-height: auto;
+    flex-direction: column;
+    }
+    .benefits-l h1{
+    font-size: 28px;
+    max-width: 100%;
+    } 
+}
+@media (max-width:430px){
+    .benefits-container {
+    margin: 28px auto;
+}
+    .benefits-wrap {
+    display: flex;
+    margin-bottom: 28px;
+}
+.benefits-r, .benefits-l{
+    padding: 16px;
+}
+.benefits-r-div p{
+    line-height: 20px;
+    font-size: 16px;
+}
+}
